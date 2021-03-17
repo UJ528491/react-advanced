@@ -2,8 +2,6 @@ import React, { useState } from "react";
 
 const UseStateBasics = () => {
   const [text, setText] = useState("hello");
-  console.log(text);
-  console.log(setText);
   const handleClick = () => {
     if (text === "hello") {
       setText("changed hello");
