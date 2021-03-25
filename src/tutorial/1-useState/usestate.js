@@ -17,13 +17,46 @@ const useInput = (initialValue, validator) => {
   return { value, onChange };
 };
 
+const contents = [
+  {
+    tab: "Section 1",
+    content: "I'm the content of the Section 1",
+  },
+  {
+    tab: "Section 2",
+    content: "I'm the content of the Section 2",
+  },
+];
+
+const useTabs = (initialTab, allTabs) => {
+  const [currentIndex, setCurrentIndex] = useState(initialTab);
+  if (!allTabs || !Array.isArray(allTabs)) {
+    return;
+  }
+  return {
+    currentItem: allTabs[currentIndex],
+    changeItem: setCurrentIndex,
+  };
+};
+
 const App = () => {
-  const maxLength = value => value.length < 10;
-  const name = useInput("Mr.", maxLength);
+  // const maxLength = value => value.length < 10;
+  // const name = useInput("Mr.", maxLength);
+  const { currentItem, changeItem } = useTabs(0, contents);
   return (
     <div>
       <h1>hello</h1>
-      <input type="text" placeholder="Name" {...name} />
+      {contents.map((section, index) => (
+        <button
+          onClick={() => changeItem(index)}
+          key={section.tab}
+          className="btn"
+        >
+          {section.tab}
+        </button>
+      ))}
+      <div>{currentItem.content}</div>
+      {/* <input type="text" placeholder="Name" {...name} /> */}
     </div>
   );
 };
