@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./tutorial/1-useState/useClick";
+import Setup from "./tutorial/1-useState/useConfirm";
 
 function App() {
   return (
