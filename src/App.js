@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./tutorial/1-useState/useBeforeLeave";
+import Setup from "./tutorial/1-useState/useFadeIn";
 
 function App() {
   return (
