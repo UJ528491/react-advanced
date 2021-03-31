@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./tutorial/1-useState/usePreventLeave";
+import Setup from "./tutorial/1-useState/useBeforeLeave";
 
 function App() {
   return (
