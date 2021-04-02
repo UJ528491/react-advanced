@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./tutorial/1-useState/useNetwork";
+import Setup from "./tutorial/1-useState/useScroll";
 
 function App() {
   return (
