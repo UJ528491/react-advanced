@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./tutorial/1-useState/useFullscreen";
+import Setup from "./tutorial/1-useState/useNotification";
 
 function App() {
   return (
