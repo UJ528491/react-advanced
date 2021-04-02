@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./tutorial/1-useState/useScroll";
+import Setup from "./tutorial/1-useState/useFullscreen";
 
 function App() {
   return (
