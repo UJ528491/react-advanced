@@ -24,7 +24,9 @@ const App = () => {
   return (
     <div>
       <h1>useNotification</h1>
-      <button onClick={triggerNotif}>on</button>
+      <button className="btn" onClick={triggerNotif}>
+        on
+      </button>
     </div>
   );
 };
